@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Register!</h1>
+    <%if @register_error%>
+    <span>Something went wrong:</span>
+    <p><%= @register_error %></p>
+  <% end %>
+  <form action="/customer" method="post">
+    <p>First Name:</p>
+    <input id="register-username" name="first_name" type="text" placeholder="First">
+    <p>Last Name:</p>
+    <input id="register-username" name="last_name" type="text" placeholder="last">
+    <p>Email:</p>
+    <input id="register-email" name="email" type="email" placeholder="you@example.com">
+    <p>Password:</p>
+    <input id="register-password" name="password" type="password" placeholder="password">
+    <input class="submit_button" type="submit" value="Login">
+  </form>
+  <br><br>
+  <a href="/login"><span class="glyphicon glyphicon-user"></span>Sign In to existing account</a>
+</div>
