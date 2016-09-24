@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Sign In</h1>
+
+  <%if @login_error%>
+    <span>Something went wrong:</span>
+    <p><%= @login_error %></p>
+  <% end %>
+
+  <form action="/login" method="post">
+    <p>Email:</p>
+    <input id="login-email" name="email" type="email" placeholder="you@example.com">
+    <p>Password:</p>
+    <input id="login-password" name="password" type="password" placeholder="password">
+    <input class="submit_button" type="submit" value="Login">
+  </form>
+  <br><br>
+  <a href="/customer/new"><span class="glyphicon glyphicon-user"></span>Create Account</a>
+</div>

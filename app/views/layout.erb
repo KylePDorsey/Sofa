@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
-    normalize.css removes cross-browser differences in defaults, e.g.,
-    differences in how form elements appear between Firefox and IE
-    See: http://necolas.github.com/normalize.css/
-  -->
+
   <link rel="stylesheet" href="/css/normalize.css">
-  <!--
-    application.css is where you put your styles
-  -->
+
   <link rel="stylesheet" href="/css/application.css">
 
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>Material Defined</title>
 </head>
 <body>
+	<div class="navbar-fixed">
+	  <nav>
+	    <div class="nav-wrapper">
+	      <a href="#" class="brand-logo">Interior Define</a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	      <li><a href="sass.html"><i class="material-icons">search</i></a>Search Selection</li>
+	        <li><a href="badges.html">Selection</a></li>
+	        <li><a href="collapsible.html">Customer Login</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+  </div>
+
+
+
   <%= yield %>
 </body>
 </html>
